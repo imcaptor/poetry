@@ -1,58 +1,58 @@
 ---
 name: poetry
-description: Write, revise, critique, translate, or workshop poems in Chinese or English; use for poem drafting, poetic line edits, form constraints, imagery, rhythm, voice, and literary taste calibration.
+description: 用中文或英文写诗、改诗、评诗、译诗或做诗歌工作坊；适用于诗歌起草、逐行润色、形式约束、意象、节奏、声音与文学品味校准。
 ---
 
-Use this skill when the user wants poetry work: composing a poem, revising lines, judging poetic quality, translating poetry, imitating or avoiding a style, building a poetics, or collecting examples for taste calibration.
+当用户需要诗歌相关工作时使用此技能：写诗、改句、判断诗作质量、翻译诗歌、模仿或避开某种风格、建立诗学标准，或收集样例来校准审美。
 
-For Chinese regulated verse requests, especially `五绝`, `七绝`, `五律`, `七律`, `近体诗`, `平水韵`, `平仄`, `对仗`, `步韵`, `和诗`, `题诗`, or old-poem revision, load `forms/jintishi.md` before drafting. That file overrides the general defaults for scope, workflow, reports, and quality gates.
+遇到中文近体诗请求，尤其是 `五绝`、`七绝`、`五律`、`七律`、`近体诗`、`平水韵`、`平仄`、`对仗`、`步韵`、`和诗`、`题诗` 或旧诗修改，起草前先加载 `forms/jintishi.md`。该文件在适用范围、工作流、报告和质量门槛上覆盖这里的通用默认规则。
 
-When a regulated-verse request needs checker/tool support, also load `tools/souyun-checker.md`. Use it as an external verification protocol for Sou-yun-style checks; do not copy proprietary Sou-yun databases or imply that a local clone exists unless the user has supplied a legitimate API, export, or licensed dataset.
+当近体诗请求需要校验器或工具支持时，同时加载 `tools/souyun-checker.md`。它是搜韵式外部复核协议；除非用户提供合法 API、导出内容或授权数据集，不要复制搜韵私有数据库，也不要暗示本地已有搜韵克隆。
 
-## First Move
+## 第一步
 
-Identify the job before writing:
+下笔前先判断任务类型：
 
-- **Draft**: create a new poem from a subject, mood, image, form, or occasion.
-- **Revise**: improve an existing poem while preserving its live center.
-- **Critique**: diagnose what works, what fails, and what to try next.
-- **Translate**: carry the poem's pressure, movement, and music across languages.
-- **Study**: extract craft principles from examples, notes, or a poet's body of work.
+- **起草**：根据主题、情绪、意象、形式或场合创作新诗。
+- **修改**：在保留原作活力核心的前提下改进已有诗作。
+- **评论**：诊断哪里有效、哪里失灵，以及下一步该怎么改。
+- **翻译**：把诗的张力、运动和音乐性带到另一种语言中。
+- **研读**：从样例、笔记或某位诗人的作品整体中提炼技艺原则。
 
-If the user gives too little direction, make one confident draft choice and proceed. Ask only when the missing choice would change the poem's basic identity: language, occasion, form, or whether to imitate a living poet.
+如果用户给的信息太少，就做一个有把握的创作选择并继续。只有缺失信息会改变诗的基本身份时才追问：语言、场合、形式，或是否模仿在世诗人。
 
-For a bare regulated-verse prompt such as “帮我写一首七绝”, ask at most three questions, then proceed with reasonable defaults from `forms/jintishi.md`.
+遇到“帮我写一首七绝”这类裸近体诗请求，最多问三个问题，然后按 `forms/jintishi.md` 中的合理默认继续。
 
-## Working Rule
+## 工作原则
 
-Prefer concrete pressure over explanation. A poem should move through image, turn, rhythm, omission, and discovery; commentary is secondary unless the user asks for it.
+具体的诗性压力优先于解释。诗应通过意象、转折、节奏、省略和发现来推进；除非用户要求，评论说明都是次要的。
 
-## Project Map
+## 项目地图
 
-- `poetics/`: taste, standards, recurring principles, and taboos.
-- `forms/`: constraints for fixed forms, meters, stanza shapes, and experiment templates.
-- `corpus/`: source poems, admired examples, anti-examples, and reading notes.
-- `prompts/`: reusable task prompts and workshop protocols.
-- `examples/`: finished samples produced with this skill.
-- `drafts/`: working drafts that may change often.
-- `notes/`: meeting notes, decisions, vocabulary, and open questions.
-- `tests/`: checklists and evaluation rubrics for poem quality.
-- `tools/`: external checker protocols, tool adapters, and integration boundaries.
+- `poetics/`：审美、标准、反复使用的原则与禁忌。
+- `forms/`：固定诗体、格律、分节形式和实验模板的约束。
+- `corpus/`：原诗、优秀样例、反例和阅读笔记。
+- `prompts/`：可复用任务提示和工作坊协议。
+- `examples/`：用此技能产出的成稿样例。
+- `drafts/`：经常变化的工作草稿。
+- `notes/`：会议笔记、决策、词汇和开放问题。
+- `tests/`：诗歌质量检查清单和评估量表。
+- `tools/`：外部校验协议、工具适配器和集成边界。
 
-Load the relevant file only when that branch needs it. Keep durable rules in the narrowest folder that owns them.
+只在对应分支确实需要时加载相关文件。持久规则应放在最小、最准确的归属目录中。
 
-## Defaults
+## 默认设置
 
-- For Chinese poems, default to modern Chinese unless the user asks for classical style.
-- For English poems, default to contemporary free verse unless the user names a form.
-- Avoid decorative abstraction when a precise image can do the work.
-- Do not explain the poem before the poem unless the user asks for process notes.
-- When revising, preserve the strongest image, turn, or emotional pressure before changing surface style.
+- 中文诗默认使用现代汉语，除非用户要求古典风格。
+- 英文诗默认使用当代自由诗，除非用户指定诗体。
+- 如果一个准确意象能完成任务，就避免装饰性抽象。
+- 除非用户要求过程说明，不要在诗前解释诗。
+- 修改时，先保留最强的意象、转折或情感压力，再改表层风格。
 
-## Output Shapes
+## 输出形态
 
-- **Draft**: title if useful, poem only, then a short note if needed.
-- **Revision**: revised poem first, then 2-4 high-signal changes.
-- **Critique**: strengths, weak spots, next revision move.
-- **Translation**: translation first, then brief notes on hard choices.
-- **Study**: extracted principles with citations or source references when available.
+- **起草**：有必要时给题目，先只给诗；需要时再附短注。
+- **修改**：先给修改稿，再列 2-4 条高价值改动说明。
+- **评论**：优点、弱点、下一步修改动作。
+- **翻译**：先给译文，再简述艰难取舍。
+- **研读**：提炼原则；如有来源，附引用或出处。

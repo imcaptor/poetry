@@ -1,5 +1,5 @@
-# Notes
+# 笔记
 
-Use this folder for planning notes, decisions, open questions, vocabulary, and meeting notes.
+这个目录用于保存计划笔记、决策、开放问题、词汇和会议记录。
 
-Prefer dated notes when recording conversations or major direction changes.
+记录对话或重大方向变化时，优先使用带日期的笔记。

@@ -1,5 +1,5 @@
-# Drafts
+# 草稿
 
-Use this folder for unstable working drafts.
+这个目录用于保存不稳定的工作草稿。
 
-Draft files can be messy. Promote only the useful ones into `examples/` or `corpus/`.
+草稿文件可以凌乱。只把有用的草稿提升到 `examples/` 或 `corpus/`。

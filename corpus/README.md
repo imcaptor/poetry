@@ -1,5 +1,5 @@
-# Corpus
+# 语料
 
-Use this folder for source poems, reading notes, admired examples, anti-examples, and style calibration material.
+这个目录用于保存原诗、阅读笔记、优秀样例、反例和风格校准材料。
 
-Respect copyright: store short excerpts, notes, and references rather than full copyrighted poems unless permission is clear.
+尊重版权：除非许可明确，否则只保存短摘、笔记和引用信息，不保存完整的受版权保护诗作。

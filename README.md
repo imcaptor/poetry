@@ -1,19 +1,19 @@
-# Poetry Skill
+# 诗歌技能
 
-This is the working home for the poetry skill. Keep future changes here so the project can grow without scattering rules across the workspace.
+这里是诗歌技能的工作目录。后续改动应集中放在这里，让项目能持续生长，而不是把规则散落到整个工作区。
 
-## Structure
+## 结构
 
-- `SKILL.md` is the invocation and operating contract.
-- `poetics/` holds taste, standards, taboos, and craft principles.
-- `forms/` holds fixed-form rules and reusable constraints.
-- `corpus/` holds poems, reading notes, admired examples, and anti-examples.
-- `prompts/` holds reusable prompts and workshop protocols.
-- `examples/` holds finished outputs worth keeping.
-- `drafts/` holds unstable working drafts.
-- `notes/` holds planning notes and decisions.
-- `tests/` holds rubrics and quality checks.
+- `SKILL.md` 是触发与运行契约。
+- `poetics/` 保存审美、标准、禁忌和技艺原则。
+- `forms/` 保存固定诗体规则和可复用约束。
+- `corpus/` 保存诗作、阅读笔记、优秀样例和反例。
+- `prompts/` 保存可复用提示和工作坊协议。
+- `examples/` 保存值得保留的成稿。
+- `drafts/` 保存不稳定的工作草稿。
+- `notes/` 保存计划笔记和决策。
+- `tests/` 保存评估量表和质量检查。
 
-## Maintenance
+## 维护
 
-When a rule becomes durable, move it out of chat and into the smallest file that owns it. When a draft becomes a reference example, copy it from `drafts/` to `examples/` with a short note on why it is worth keeping.
+当一条规则变得稳定，就把它从对话中移到最小、最准确的归属文件里。当草稿成为可参考样例时，把它从 `drafts/` 复制到 `examples/`，并简短说明它为什么值得保留。
