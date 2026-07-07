@@ -1,5 +1,5 @@
-# Forms
+# 诗体
 
-Use this folder for poetic forms, meters, stanza patterns, constraints, and reusable experiment shapes.
+这个目录用于保存诗体、格律、分节模式、约束和可复用实验形式。
 
-Each form file should include the constraint, when to use it, and failure modes.
+每个诗体文件都应包含约束、使用场景和常见失败模式。

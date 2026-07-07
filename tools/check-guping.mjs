@@ -2,11 +2,11 @@
 import fs from 'node:fs';
 
 function usage(exitCode = 0) {
-  const text = `Usage:
+  const text = `用法：
   node tools/check-guping.mjs '<json>'
-  node tools/check-guping.mjs path/to/input.json
+  node tools/check-guping.mjs 输入文件.json
 
-Input JSON shape:
+输入 JSON 结构：
 {
   "lines": [
     { "text": "万时一梦轻", "tones": "仄平仄仄平" },
@@ -14,10 +14,10 @@ Input JSON shape:
   ]
 }
 
-Rule:
-  For a 5- or 7-character level-ending line, if the non-rhyme-foot
-  positions contain exactly one definite 平, report 孤平. Ambiguous tone
-  symbols such as ? / 中 / 可 / X cause 需人工确认.
+规则：
+  对五言或七言平收句，如果除句末韵脚外只剩一个明确平声字，
+  判为孤平。遇到 ? / 中 / 可 / X 等不确定平仄符号时，
+  判为需人工确认。
 `;
   (exitCode ? console.error : console.log)(text);
   process.exit(exitCode);
@@ -84,13 +84,13 @@ let parsed;
 try {
   parsed = JSON.parse(readInput(process.argv[2]));
 } catch (error) {
-  console.error(`Invalid JSON: ${error.message}`);
+  console.error(`JSON 无效：${error.message}`);
   usage(1);
 }
 
 const lines = Array.isArray(parsed) ? parsed : parsed.lines;
 if (!Array.isArray(lines) || lines.length === 0) {
-  console.error('Input must contain a non-empty lines array.');
+  console.error('输入必须包含非空的 lines 数组。');
   usage(1);
 }
 

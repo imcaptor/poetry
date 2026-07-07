@@ -1,5 +1,5 @@
-# Examples
+# 样例
 
-Use this folder for finished or exemplary outputs produced with the skill.
+这个目录用于保存通过此技能产出的成稿或示范性作品。
 
-Include a short note beside each example explaining what it demonstrates.
+每个样例旁边应附一条短注，说明它示范了什么。

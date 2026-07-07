@@ -1,7 +1,7 @@
-# Tests
+# 测试
 
-Use this folder for rubrics, checklists, and evaluation prompts.
+这个目录用于保存评估量表、检查清单和评估提示。
 
-Tests should catch dullness, cliche, fake profundity, rhythm problems, and mismatches with the user's requested form or voice.
+测试应能捕捉乏味、套话、伪深刻、节奏问题，以及与用户要求的形式或声音不匹配之处。
 
-For regulated verse, use `jintishi-acceptance.md` as the smoke checklist before treating the skill as ready.
+对于近体诗，在认定此技能可用前，使用 `jintishi-acceptance.md` 作为冒烟检查清单。

@@ -1,5 +1,5 @@
-# Prompts
+# 提示
 
-Use this folder for reusable prompt patterns, workshop flows, revision protocols, and critique templates.
+这个目录用于保存可复用的提示模式、工作坊流程、修改协议和评论模板。
 
-Prompts should say when to use them and what completion looks like.
+每个提示都应说明何时使用，以及完成时应是什么样子。

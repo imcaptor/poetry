@@ -1,5 +1,5 @@
-# Poetics
+# 诗学
 
-Use this folder for taste calibration: what kind of poetry this skill should make, value, distrust, and revise toward.
+这个目录用于审美校准：此技能应写出、珍视、警惕并朝向哪种诗。
 
-Good entries are specific enough to change a line-level decision.
+好的条目应足够具体，能改变逐行层面的判断。
